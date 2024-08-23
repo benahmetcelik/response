@@ -100,4 +100,11 @@ class Response
             'message' => $message
         ]);
     }
+    
+    public function html($content)
+    {
+        header('Content-Type: text/html');
+        echo $content;
+        return;
+    }
 }
